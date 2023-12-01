@@ -1,0 +1,67 @@
+Transplant Year,Donor Type,Organ Transplanted,Total Distinct Recipients,Male Distinct Recipients,Female Distinct Recipients,Distinct Recipients with Age Not Reported,Pediatric Distinct Recipients,Age 18-30 Distinct Recipients,Age 31-40 Distinct Recipients,Age 41-50 Distinct Recipients,Age 51-60 Distinct Recipients,Age 61+ Distinct Recipients,White Distinct Recipients,Black Distinct Recipients,Hispanic Distinct Recipients,Asian Distinct Recipients,American Indian Distinct Recipients,Native Hawaiian Distinct Recipients,Multiracial Distinct Recipients,Distinct Recipients with Medicare Advantage Payment Source,Distinct Recipients with Private Insurance Payment Source,Distinct Recipients with Medicare FFS Payment Source,Distinct Recipients with Medicaid and CHIP Payment Source,Distinct Recipients with Other Insurance Payment Sources
+2017,Deceased Donor,Heart,3239,2320,919,0,     431,     210,250,475,861,    1012,1995,     756,     328,     118,Suppressed,Suppressed,      20,     449,1487,572,     612,     119
+2017,Deceased Donor,Kidney,14027,8451,5576,0,     511,     893,1698,2702,3784,    4439,5389,    4566,    2750,    1009,     156,      61,      96,    2383,3029,7226,    1081,     308
+2017,Deceased Donor,Kidney-Pancreas,789,499,290,0,Suppressed,      70,272,281,138,Suppressed,418,     218,     121,      22,Suppressed,Suppressed,Suppressed,     101,290,325,Suppressed,Suppressed
+2017,Deceased Donor,Liver,7616,4908,2708,0,     518,     267,490,1043,2423,    2875,5320,     725,    1134,     307,      71,Suppressed,      44,     807,3679,1396,    1402,     332
+2017,Deceased Donor,Lung,2440,1431,1009,0,      44,     160,172,201,639,    1224,1930,     237,     196,      64,Suppressed,Suppressed,Suppressed,     542,1081,530,     209,      78
+2017,Deceased Donor,Pancreas,210,110,100,0,      29,Suppressed,54,52,40,Suppressed,167,      23,Suppressed,Suppressed,Suppressed,Suppressed,Suppressed,Suppressed,104,46,      33,Suppressed
+2017,Deceased Donor,All Transplanted Organ Types,27282,17040,10242,0,    1480,    1580,2866,4610,7536,    9210,14593,    6333,    4377,    1484,     237,      93,     165,    4137,9249,9812,    3264,     820
+2017,Living Donor,Kidney,5805,3615,2190,0,     235,     653,823,1191,1473,    1430,3837,     706,     858,     341,      21,Suppressed,      28,     582,3272,1525,     330,      96
+2017,Living Donor,Liver,367,198,169,0,      72,      23,33,48,87,     104,288,Suppressed,      44,Suppressed,Suppressed,       0,Suppressed,      40,244,30,      36,      17
+2017,Living Donor,All Transplanted Organ Types,6172,3813,2359,0,     307,     676,856,1239,1560,    1534,4125,     720,     902,     356,      24,Suppressed,      31,     622,3516,1555,     366,     113
+2017,All Donors,All Transplanted Organ Types,33434,20842,12592,0,    1784,    2252,3721,5845,9091,   10741,18706,    7050,    5276,    1838,     261,     107,     196,    4758,12750,11365,    3629,     932
+2018,Deceased Donor,Heart,3400,2375,1025,0,     468,     206,251,482,872,    1121,2126,     734,     360,     133,Suppressed,Suppressed,      24,     511,1519,609,     621,     140
+2018,Deceased Donor,Kidney,14713,8721,5992,0,     479,     929,1674,2701,3833,    5097,5505,    4765,    2970,    1111,     152,      73,     137,    2405,3198,7533,    1219,     358
+2018,Deceased Donor,Kidney-Pancreas,834,521,313,0,Suppressed,      76,285,296,144,Suppressed,404,     249,     142,      21,Suppressed,Suppressed,Suppressed,     109,332,315,Suppressed,Suppressed
+2018,Deceased Donor,Liver,7741,4989,2752,0,     486,     303,530,1035,2401,    2986,5307,     684,    1258,     348,      72,      18,      54,     828,3694,1466,    1424,     329
+2018,Deceased Donor,Lung,2522,1511,1011,0,      35,     162,157,239,579,    1350,1992,     234,     222,      53,Suppressed,Suppressed,Suppressed,     568,1044,585,     235,      90
+2018,Deceased Donor,Pancreas,190,93,97,0,      31,Suppressed,49,46,33,Suppressed,140,      26,      17,Suppressed,Suppressed,       0,Suppressed,Suppressed,99,34,      41,Suppressed
+2018,Deceased Donor,All Transplanted Organ Types,28381,17556,10825,0,    1451,    1658,2876,4655,7537,   10204,14868,    6500,    4808,    1632,     242,     101,     230,    4285,9501,10256,    3431,     908
+2018,Living Donor,Kidney,6438,4028,2410,0,     274,     730,883,1274,1563,    1714,4177,     785,    1011,     386,      30,Suppressed,      35,     677,3434,1843,     352,     132
+2018,Living Donor,Liver,401,219,182,0,      62,      21,37,57,88,     136,307,Suppressed,      61,Suppressed,       0,Suppressed,Suppressed,Suppressed,225,47,      74,Suppressed
+2018,Living Donor,All Transplanted Organ Types,6836,4246,2590,0,     335,     751,920,1331,1650,    1849,4483,     800,    1071,     399,      30,Suppressed,      38,     721,3658,1890,     425,     142
+2018,All Donors,All Transplanted Organ Types,35198,21792,13406,0,    1785,    2408,3794,5979,9184,   12048,19336,    7299,    5879,    2028,     272,     116,     268,    5003,13147,12144,    3855,    1049
+2019,Deceased Donor,Heart,3542,2459,1083,0,     507,     273,293,507,909,    1053,2164,     798,     405,     124,Suppressed,Suppressed,      25,     498,1669,502,     694,     179
+2019,Deceased Donor,Kidney,16521,9935,6586,0,     518,     949,1913,2976,4342,    5823,6171,    5390,    3367,    1220,     143,      80,     150,    2752,3686,8399,    1292,     392
+2019,Deceased Donor,Kidney-Pancreas,872,545,327,0,Suppressed,      74,340,264,164,Suppressed,427,     253,     148,      36,Suppressed,Suppressed,Suppressed,      80,374,338,Suppressed,Suppressed
+2019,Deceased Donor,Liver,8263,5252,3011,0,     457,     317,648,1202,2541,    3098,5704,     665,    1410,     341,      71,      18,      54,     914,4056,1469,    1485,     339
+2019,Deceased Donor,Lung,2711,1632,1079,0,      50,     165,160,249,677,    1410,2088,     257,     285,      66,Suppressed,Suppressed,Suppressed,     669,1126,577,     220,     119
+2019,Deceased Donor,Pancreas,143,73,70,0,      18,Suppressed,36,40,27,Suppressed,101,      23,      17,Suppressed,       0,       0,Suppressed,Suppressed,83,29,      16,Suppressed
+2019,Deceased Donor,All Transplanted Organ Types,30967,19220,11747,0,    1505,    1739,3302,5112,8331,   10978,16033,    7181,    5439,    1746,     223,     113,     232,    4770,10541,11015,    3625,    1016
+2019,Living Donor,Kidney,6865,4318,2547,0,     241,     797,984,1291,1643,    1909,4400,     883,    1070,     405,      31,Suppressed,      63,     749,3703,1894,     359,     160
+2019,Living Donor,Liver,524,270,254,0,      79,      47,41,59,131,     167,407,      20,      68,      17,Suppressed,Suppressed,Suppressed,Suppressed,326,59,      76,Suppressed
+2019,Living Donor,All Transplanted Organ Types,7389,4588,2801,0,     320,     844,1025,1350,1774,    2076,4807,     903,    1138,     422,      34,Suppressed,      70,     799,4029,1953,     435,     173
+2019,All Donors,All Transplanted Organ Types,38333,23796,14537,0,    1820,    2582,4324,6458,10101,   13048,20823,    8082,    6576,    2165,     257,     128,     302,    5567,14557,12966,    4055,    1188
+2020,Deceased Donor,Heart,3647,2608,1039,0,     459,     224,320,520,966,    1158,2167,     910,     395,     124,Suppressed,Suppressed,      24,     564,1684,523,     719,     157
+2020,Deceased Donor,Kidney,17574,10712,6862,0,     488,    1096,2113,3164,4646,    6067,6839,    5637,    3409,    1287,     156,      97,     149,    3028,4410,8413,    1339,     384
+2020,Deceased Donor,Kidney-Pancreas,827,490,337,0,Suppressed,      71,304,271,154,Suppressed,401,     249,     134,      33,Suppressed,Suppressed,Suppressed,     115,326,286,      84,      16
+2020,Deceased Donor,Liver,8291,5212,3079,0,     430,     306,742,1316,2434,    3063,5666,     664,    1466,     359,      68,      18,      50,     896,4113,1412,    1553,     317
+2020,Deceased Donor,Lung,2536,1488,1048,0,      32,      87,125,204,670,    1418,1903,     256,     280,      73,Suppressed,Suppressed,Suppressed,     744,997,516,     209,      70
+2020,Deceased Donor,Pancreas,134,69,65,0,      18,Suppressed,34,33,23,Suppressed,94,      20,      18,Suppressed,Suppressed,Suppressed,Suppressed,Suppressed,73,26,      21,Suppressed
+2020,Deceased Donor,All Transplanted Organ Types,31778,19797,11981,0,    1388,    1751,3528,5342,8505,   11264,16369,    7518,    5482,    1805,     249,     129,     226,    5168,11084,10844,    3766,     916
+2020,Living Donor,Kidney,5232,3300,1932,0,     222,     555,722,977,1268,    1488,3363,     595,     866,     330,      21,      17,      40,     546,2933,1376,     276,     101
+2020,Living Donor,Liver,491,253,238,0,      66,      32,40,72,112,     169,379,      23,      66,      16,Suppressed,Suppressed,Suppressed,      54,296,50,      75,      16
+2020,Living Donor,All Transplanted Organ Types,5723,3553,2170,0,     288,     587,762,1049,1380,    1657,3742,     618,     932,     346,      22,      18,      45,     600,3229,1426,     351,     117
+2020,All Donors,All Transplanted Organ Types,37480,23339,14141,0,    1676,    2338,4286,6387,9880,   12913,20095,    8136,    6410,    2151,     271,     146,     271,    5765,14300,12266,    4117,    1032
+2021,Deceased Donor,Heart,3806,2735,1071,2,     486,     244,313,498,1072,    1191,2211,     926,     451,     160,      16,Suppressed,      31,     644,1685,552,     772,     153
+2021,Deceased Donor,Kidney,18684,11305,7379,0,     585,    1200,2389,3398,4799,    6313,6666,    6292,    3921,    1397,     146,     109,     153,    3763,4594,8238,    1634,     455
+2021,Deceased Donor,Kidney-Pancreas,820,504,316,0,Suppressed,      69,272,276,180,Suppressed,363,     263,     140,      44,Suppressed,Suppressed,Suppressed,     136,301,293,      69,      21
+2021,Deceased Donor,Liver,8547,5349,3198,0,     414,     320,878,1414,2568,    2953,5923,     654,    1438,     364,      98,Suppressed,      56,     895,4332,1308,    1662,     350
+2021,Deceased Donor,Lung,2520,1612,908,0,      23,      77,149,227,653,    1391,1776,     253,     359,      97,      18,Suppressed,Suppressed,     612,1049,505,     244,     110
+2021,Deceased Donor,Pancreas,140,65,75,0,      20,Suppressed,37,38,24,Suppressed,103,      19,Suppressed,Suppressed,       0,       0,Suppressed,Suppressed,80,19,      21,Suppressed
+2021,Deceased Donor,All Transplanted Organ Types,33229,20745,12484,2,    1482,    1877,3933,5649,8896,   11390,16282,    8185,    6096,    2009,     273,     133,     251,    5852,11489,10641,    4196,    1051
+2021,Living Donor,Kidney,5969,3743,2226,0,     234,     620,917,1135,1385,    1678,3706,     777,    1023,     369,      35,Suppressed,      45,     656,3329,1541,     324,     119
+2021,Living Donor,Liver,569,271,298,0,      77,      41,66,81,125,     179,416,      31,     101,      16,Suppressed,       0,Suppressed,      49,339,79,      80,      22
+2021,Living Donor,All Transplanted Organ Types,6538,4014,2524,0,     311,     661,983,1216,1510,    1857,4122,     808,    1124,     385,      38,Suppressed,      47,     705,3668,1620,     404,     141
+2021,All Donors,All Transplanted Organ Types,39748,24750,14998,2,    1791,    2536,4910,6861,10403,   13245,20394,    8989,    7217,    2392,     311,     147,     298,    6556,15144,12259,    4597,    1192
+2022,Deceased Donor,Heart,4105,2926,1179,0,     490,     296,383,570,1069,    1297,2267,    1076,     536,     157,      16,      23,      30,     652,1825,593,     831,     204
+2022,Deceased Donor,Kidney,19621,11903,7718,0,     500,    1117,2377,3531,5119,    6977,6911,    6611,    4107,    1579,     154,      86,     173,    4048,5168,8128,    1717,     560
+2022,Deceased Donor,Kidney-Pancreas,810,486,324,0,Suppressed,      65,302,251,174,Suppressed,327,     266,     162,      40,Suppressed,Suppressed,Suppressed,     135,327,259,      61,      28
+2022,Deceased Donor,Liver,8807,5502,3305,0,     429,     343,883,1497,2618,    3037,6031,     613,    1627,     377,      91,Suppressed,      58,     917,4405,1302,    1705,     478
+2022,Deceased Donor,Lung,2684,1669,1015,0,      18,      74,129,236,628,    1599,1914,     242,     389,     116,Suppressed,Suppressed,Suppressed,     628,1080,641,     231,     104
+2022,Deceased Donor,Pancreas,106,53,53,0,Suppressed,Suppressed,27,32,19,Suppressed,74,Suppressed,Suppressed,Suppressed,       0,Suppressed,       0,Suppressed,48,20,      20,Suppressed
+2022,Deceased Donor,All Transplanted Organ Types,34763,21625,13138,0,    1416,    1853,3980,5906,9193,   12415,16723,    8570,    6610,    2209,     271,     114,     266,    6172,12268,10654,    4350,    1319
+2022,Living Donor,Kidney,5861,3632,2229,0,     202,     601,805,1159,1344,    1750,3605,     745,    1030,     398,      33,Suppressed,      38,     686,3187,1472,     355,     161
+2022,Living Donor,Liver,603,312,291,0,      87,      50,46,93,141,     186,447,      27,      99,      21,Suppressed,Suppressed,Suppressed,      64,362,81,      76,      20
+2022,Living Donor,All Transplanted Organ Types,6462,3942,2520,0,     289,     651,851,1251,1485,    1935,4051,     772,    1128,     419,      35,Suppressed,      43,     749,3548,1553,     431,     181
+2022,All Donors,All Transplanted Organ Types,41199,25551,15648,0,    1705,    2499,4830,7153,10670,   14342,20752,    9341,    7736,    2627,     306,     128,     309,    6919,15798,12204,    4779,    1499
