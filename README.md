@@ -6,22 +6,18 @@ Showcasing organ donation and transplantation across the American States for the
 Data was obtained from the Health Resources and Service Administration: https://data.hrsa.gov/data/download. Includes data from January 1, 2017 - December 31, 2022.
 
 #### The following CSVs will be used for this project: 
-1. overview-national.csv: contains national numbers per organ per year. We will likely use the following columns:
-- Number of deceased organ donors recovered
-- Number of living organ donors recovered
-- Number of deceased donor organ transplant recipients
-- Number of living donor organ transplant recipients
-  
-2. overview-state.csv: contains counts for each organ per year for each state. Categorized into:
-- Deceased organ donors
-- Living organ donors
-- Waitlist candidates
-- Transplant recipients
-  
-3. donor-demographics.csv: donor count by: type, sex, race/ethnicity, and age group - _note: some demographics are divided by living donors vs deceased donors while others are divided by all donors vs deceased donors_
- 
+1. overview-national.csv: This visualization will include two bar charts: one for living donors/recipients and one for decreased organs/recipients:
+- x-axis: years 2017-2022
+- y-axis: count
+  each bar chart will be grouped with one bar for donors and one bar for recipients per each year 
 
-4. recipient-demographics: recipient count by: sex, age group, race/ethnicity, insurance type. Can be grouped by transplant year, donor type (deceased vs living), and organ. 
+  
+2. overview-state.csv: We will focus on the Transplant Recipients category. This visualization will show the recipient count across the 50 states suing Chloropleth. Users will be able to select the year from 2017-2022 to show the map for each year. When selecting a state, a popup will show the recipient count for all organs, heart, kidney, kidney-pancreas, liver, lung, and pancreas.       
+
+4. recipient-demographics: demographics data will be displayed for the following:
+- Sex: bar chart for each year
+- Age: 6 bins displayed in a histogram for each year
+- Race: 7 bins displayed in a pie or bar chart for each year
 
 
 
