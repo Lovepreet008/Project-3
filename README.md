@@ -18,7 +18,7 @@ We will focus on the Transplant Recipients category. This visualization will sho
 
 4. recipient-demographics: Yasmin and Keyana
 Demographic data will be displayed for the following:
-- Sex: bar chart for each year
+- Sex: pie chart for each year
 - Age: 6 bins displayed in a histogram for each year
 - Race: 7 bins displayed in a pie or bar chart for each year
 
