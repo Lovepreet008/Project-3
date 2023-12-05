@@ -3,7 +3,7 @@
 ### Project idea: 
 Showcasing organ donation and transplantation across the American States for the following organs: Heart, Kidney, Kidney-Pancreas, Liver, Lung, Pancreas, and All. 
 
-Data was obtained from the Health Resources and Service Administration: https://data.hrsa.gov/data/download. Includes data from January 1, 2017 - December 31, 2022.
+Data was obtained from the Health Resources and Service Administration: https://data.hrsa.gov/data/download. Includes data from January 1, 2017 - and December 31, 2022.
 
 #### The following CSVs will be used for this project: 
 1. overview-national.csv: Lovepreet and Keyana
@@ -18,9 +18,9 @@ We will focus on the Transplant Recipients category. This visualization will sho
 
 4. recipient-demographics: Yasmin and Keyana
 Demographic data will be displayed for the following:
-- Sex: bar chart for each year
+- Sex: pie chart for each year
 - Age: 6 bins displayed in a histogram for each year
-- Race: 7 bins displayed in a pie or bar chart for each year
+- Race: 7 bins displayed in a pie chart for each year
 
 
 
