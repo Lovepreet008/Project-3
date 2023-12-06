@@ -11,8 +11,8 @@ db = SQLAlchemy(app)
 # Define a model for demographics_db table
 class DataModel1(db.Model):
         __tablename__ = 'demographics'
-        index = db.Column(db.Integer, primary_key=True)
-        transplant_year = db.Column(db.Integer)  
+        #index = db.Column(db.Integer, primary_key=True)
+        transplant_year = db.Column(db.Integer, primary_key=True)  
         donor_type = db.Column(db.String) 
         organ_transplanted = db.Column(db.String)  
         total = db.Column(db.Integer) 
@@ -37,7 +37,7 @@ class DataModel1(db.Model):
         def serialize(self):
             # This method returns the model's data as a dictionary
             return {
-                'index': self.index,
+                #'index': self.index,
                 'transplant_year': self.transplant_year,
                 'donor_type': self.donor_type,
                 'organ_transplanted': self.organ_transplanted,
@@ -63,8 +63,8 @@ class DataModel1(db.Model):
 # Define a model for national_db table
 class DataModel2(db.Model):
     __tablename__ = 'national'
-    index = db.Column(db.Integer, primary_key=True)
-    year = db.Column(db.Integer)
+    #index = db.Column(db.Integer, primary_key=True)
+    year = db.Column(db.Integer, primary_key=True)
     organ = db.Column(db.String)
     number_of_deceased_organ_donors_recovered = db.Column(db.Integer)
     number_of_living_organ_donors_recovered = db.Column(db.Integer)
@@ -75,7 +75,7 @@ class DataModel2(db.Model):
     def serialize(self):
         # This method returns the model's data as a dictionary
         return {
-            'index': self.index,
+            #'index': self.index,
             'year': self.year,
             'organ': self.organ,
             'number_of_deceased_organ_donors_recovered': self.number_of_deceased_organ_donors_recovered,
@@ -87,9 +87,9 @@ class DataModel2(db.Model):
 # Define a model for state_db table
 class DataModel3(db.Model):
     __tablename__ = 'state'
-    index = db.Column(db.Integer, primary_key=True)
+    #index = db.Column(db.Integer, primary_key=True)
     type = db.Column(db.String)
-    year = db.Column(db.Integer)
+    year = db.Column(db.Integer, primary_key=True)
     state_name = db.Column(db.String)
     state_code = db.Column(db.String)
     organ = db.Column(db.String)
@@ -99,7 +99,7 @@ class DataModel3(db.Model):
     def serialize(self):
         # This method returns the model's data as a dictionary
         return {
-            'index': self.index,
+            #'index': self.index,
             'type': self.type,
             'year': self.year,
             'state_name': self.state_name,
