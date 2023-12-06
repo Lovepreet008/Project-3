@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/organs_db'
 db = SQLAlchemy(app)
 
- # Define a model for demographics_db table
-class DataModel(db.Model):
+# Define a model for demographics_db table
+class DataModel1(db.Model):
         __tablename__ = 'demographics'
         index = db.Column(db.Integer, primary_key=True)
         transplant_year = db.Column(db.Integer)  
@@ -60,44 +60,75 @@ class DataModel(db.Model):
                 'multiracial': self.multiracial
             }
 
+# Define a model for national_db table
+class DataModel2(db.Model):
+    __tablename__ = 'national'
+    index = db.Column(db.Integer, primary_key=True)
+    year = db.Column(db.Integer)
+    organ = db.Column(db.String)
+    number_of_deceased_organ_donors_recovered = db.Column(db.Integer)
+    number_of_living_organ_donors_recovered = db.Column(db.Integer)
+    number_of_deceased_donor_organ_transplant_recipients = db.Column(db.Integer)
+    number_of_living_donor_organ_transplant_recipients = db.Column(db.Integer)
+    # Define other columns here
+    @property
+    def serialize(self):
+        # This method returns the model's data as a dictionary
+        return {
+            'index': self.index,
+            'year': self.year,
+            'organ': self.organ,
+            'number_of_deceased_organ_donors_recovered': self.number_of_deceased_organ_donors_recovered,
+            'number_of_living_organ_donors_recovered': self.number_of_living_organ_donors_recovered,
+            'number_of_deceased_donor_organ_transplant_recipients': self.number_of_deceased_donor_organ_transplant_recipients,
+            'number_of_living_donor_organ_transplant_recipients': self.number_of_living_donor_organ_transplant_recipients
+        }
 
+# Define a model for state_db table
+class DataModel3(db.Model):
+    __tablename__ = 'state'
+    index = db.Column(db.Integer, primary_key=True)
+    type = db.Column(db.String)
+    year = db.Column(db.Integer)
+    state_name = db.Column(db.String)
+    state_code = db.Column(db.String)
+    organ = db.Column(db.String)
+    counts = db.Column(db.Integer)
+    # Define other columns here
+    @property
+    def serialize(self):
+        # This method returns the model's data as a dictionary
+        return {
+            'index': self.index,
+            'type': self.type,
+            'year': self.year,
+            'state_name': self.state_name,
+            'state_code': self.state_code,
+            'organ': self.organ,
+            'counts': self.counts
+        }
+    
 # 3. Define what to do when a user hits the index route
 @app.route("/")
 def home():
     print("Server received request for 'Home' page...")
     return "Welcome to my 'Home' page!"
-
-
-# # 4. Define what to do when a user hits the /about route
-# @app.route("/demographics")
-# def about():
-#     print("Server received request for 'About' page...")
-#     return "Welcome to my 'About' page!"
-
     
 # Define a route for demographics API call
 @app.route('/api/demographics', methods=['GET'])
-def get_data():
-    data = DataModel.query.all()
+def demographics():
+    data = DataModel1.query.all()
     return jsonify([item.serialize for item in data])
 
-# @app.route("/national")
-# def about():
-#     print("Server received request for 'About' page...")
-#     return "Welcome to my 'About' page!"
-
-# @app.route("/state")
-# def about():
-#     print("Server received request for 'About' page...")
-#     return "Welcome to my 'About' page!"
-
-
+@app.route("/api/national")
+def national():
+    data = DataModel2.query.all()
+    return jsonify([item.serialize for item in data])
+    
+@app.route("/api/state")
+def state():
+    data = DataModel3.query.all()
+    return jsonify([item.serialize for item in data])
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
