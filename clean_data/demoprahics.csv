@@ -1,4 +1,4 @@
-transplant_year,donor_type,organ_transplanted,total,male,female,no_age_reported,pediatric,18_30,31_40,41_50,51_60,61_plus,white,black,hispanic,asian,american_indian,native_hawaiian,multiracial
+transplant_year,donor_type,organ_transplanted,total,male,female,no_age_reported,pediatric,age_18_30,age_31_40,age_41_50,age_51_60,age_61_plus,white,black,hispanic,asian,american_indian,native_hawaiian,multiracial
 2017,Deceased Donor,Heart,3239,2320,919,0,431,210,250,475,861,1012,1995,756,328,118,0,0,20
 2017,Deceased Donor,Kidney,14027,8451,5576,0,511,893,1698,2702,3784,4439,5389,4566,2750,1009,156,61,96
 2017,Deceased Donor,Kidney-Pancreas,789,499,290,0,0,70,272,281,138,0,418,218,121,22,0,0,0
