@@ -1,10 +1,13 @@
 # 1. import Flask
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
+
 
 
 # 2. Create an app, being sure to pass __name__
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/organs_db'
 db = SQLAlchemy(app)
 
@@ -13,8 +16,8 @@ class DataModel1(db.Model):
         __tablename__ = 'demographics'
         #index = db.Column(db.Integer, primary_key=True)
         transplant_year = db.Column(db.Integer, primary_key=True)  
-        donor_type = db.Column(db.String) 
-        organ_transplanted = db.Column(db.String)  
+        donor_type = db.Column(db.String, primary_key=True) 
+        organ_transplanted = db.Column(db.String, primary_key=True)  
         total = db.Column(db.Integer) 
         male = db.Column(db.Integer)  
         female = db.Column(db.Integer)  
@@ -65,7 +68,7 @@ class DataModel2(db.Model):
     __tablename__ = 'national'
     #index = db.Column(db.Integer, primary_key=True)
     year = db.Column(db.Integer, primary_key=True)
-    organ = db.Column(db.String)
+    organ = db.Column(db.String, primary_key=True)
     number_of_deceased_organ_donors_recovered = db.Column(db.Integer)
     number_of_living_organ_donors_recovered = db.Column(db.Integer)
     number_of_deceased_donor_organ_transplant_recipients = db.Column(db.Integer)
@@ -90,9 +93,9 @@ class DataModel3(db.Model):
     #index = db.Column(db.Integer, primary_key=True)
     type = db.Column(db.String)
     year = db.Column(db.Integer, primary_key=True)
-    state_name = db.Column(db.String)
+    state_name = db.Column(db.String, primary_key=True)
     state_code = db.Column(db.String)
-    organ = db.Column(db.String)
+    organ = db.Column(db.String, primary_key=True)
     counts = db.Column(db.Integer)
     # Define other columns here
     @property
@@ -129,6 +132,7 @@ def national():
 def state():
     data = DataModel3.query.all()
     return jsonify([item.serialize for item in data])
+
 
 if __name__ == "__main__":
     app.run(debug=True)
