@@ -1,13 +1,10 @@
 # 1. import Flask
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
-from flask_cors import CORS
-
-
 
 # 2. Create an app, being sure to pass __name__
 app = Flask(__name__)
-CORS(app)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/organs_db'
 db = SQLAlchemy(app)
 
@@ -114,6 +111,7 @@ class DataModel3(db.Model):
 # 3. Define what to do when a user hits the index route
 @app.route("/")
 def home():
+    return render_template("index.html")
     print("Server received request for 'Home' page...")
     return "Welcome to my 'Home' page!"
     
