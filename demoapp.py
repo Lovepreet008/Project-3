@@ -1,10 +1,11 @@
 # 1. import Flask
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 # 2. Create an app, being sure to pass __name__
 app = Flask(__name__)
-
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/organs_db'
 db = SQLAlchemy(app)
 
