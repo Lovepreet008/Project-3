@@ -1,7 +1,8 @@
-html {background-color: lightblue;
+html {background-color: beige;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;}
 
+body {background-color: beige;}
 h1 {color: black;
     font-size: 40px;
     font-family: "Times New Roman", Times, serif;
@@ -13,3 +14,14 @@ h2 {color: black;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     text-decoration: underline;}
+
+#bar1 {
+    width: 800px;
+    height: 400px;
+    
+    }
+#bar2 {
+    width: 400px;
+    height: 200px;
+    
+    }
