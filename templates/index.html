@@ -10,17 +10,19 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="main">
+            <div class="col-md-12 jumbotron text-center">
             <h1>Organ Donation and Transplantation in the United States</h1>
             <p> An interactive dashboard showcasing organ donation and transplantation data between 2017-2022</p>
-    
+            </div>
         </div>
         
         <div class="row">
+            
             <div class="col-md-2">
                 <div class="well">
                     <h5>Organ:</h5>
-                    <select id="selDataset">
+                    <select id="selDataset0">
                         <option value="Heart">Heart</option>
                         <option value="Kidney">Kidney</option>
                         <option value="Kidney-Pancreas">Kidney-Pancreas</option>
@@ -29,43 +31,67 @@
                         <option value="Pancreas">Pancreas</option>
                         <option value="All">All</option>
                     </select>
-                </div>
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Yearly Overview of Organ Donation and Transplantation</h3>
-                    </div>
-                    <div id="overview-year" class="panel-body"></div>
+
                 </div>
             </div>
             
-
-            <div class="col-md-5">
-                <div id="bar1"></div>
-            </div>
-            <div class="col-md-5">
-                <div id="bar2"></div>
-            </div>
+            
+            
         </div>
-        <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Yearly Overview of Organ Donation and Transplantation</h3>
+            </div>
+            <div id="overview-year" class="panel-body"></div>
+        </div>
+        <div class="graph1">  
+            <div1 class="col-md-6">
+                <div id="bar1"></div>
+            </div1>
+            <div2 class="col-md-6">
+                <div id="bar2"></div>
+            </div2>
+        </div>
+        <div class="graph2">
             <div class="col-md-12">
                 <div id="map"></div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-2">
+            
+                <div class="well">
+                    <h5>Year:</h5>
+                    <select id="selDataset">
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        
+                    </select>
+
+                </div>
+    
+                    
+            </div>
+        </div>
+        <div class="graph3">
+            <div class="col-md-6">
                 <div id="pie1"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="histogram"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div id="pie2"></div>
             </div>
         </div>
+        <div class="graph4">
+            <div class="col-md-12 centered">
+                <div id="histogram" ></div>
+            </div>
+        </div>
+        
     </div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
