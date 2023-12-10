@@ -19,7 +19,7 @@ function createPieChart1(data, year) {
 
     // Define the layout 
     let layout = {
-        title: 'Donor Sex Distribution in ' + year,
+        title: 'Recipient Sex Distribution in ' + year,
         height: 400,
         width: 500
     };
@@ -51,7 +51,7 @@ function createHistogram(data, year) {
 
     // Define the layout for histogram
     let layout = {
-        title: 'Donor Age Distribution in ' + year,
+        title: 'Recipient Age Distribution in ' + year,
         xaxis: {title: 'Age Group'},
         yaxis: {title: 'Count'},
         bargap: 0.2}
@@ -85,7 +85,7 @@ function createPieChart2(data, year) {
 
     // Define the layout
     let layout = {
-        title: 'Donor Ethnicity Distribution in ' + year,
+        title: 'Recipient Ethnicity Distribution in ' + year,
         height: 400,
         width: 500
     }; 
