@@ -10,12 +10,53 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     }).addTo(map);
     
 //load GeoJSON data
-let geoData = "http://127.0.0.1:5000/api/state";
+let geojsonData, jsonData;
+
+// Load GeoJSON data
+$.getJSON('../clean_data/us-state-boundaries.geojson', function(data) {
+  geojsonData = data;
+  combineData();
+});
+
+// Load JSON data
+fetch('http://127.0.0.1:5000/api/state')
+  .then(response => response.json())
+  .then(data => {
+    jsonData = data;
+    combineData();
+  });
 
 // To do:
+function combineData() {
+  if (!geojsonData || !jsonData) {
+    // If either dataset hasn't been loaded yet, do nothing
+    return;
+  }
+
+  // Create a lookup object for quick access to JSON data by state code
+  const dataLookup = jsonData.reduce((lookup, item) => {
+    lookup[item.state_code] = item;
+    return lookup;
+  }, {});
+
+  // Loop through each feature in the GeoJSON and add properties from JSON data
+  geojsonData.features.forEach(feature => {
+    const stateCode = feature.properties.stusab; // Adjust the property key as needed
+    if (dataLookup[stateCode]) {
+      // Add properties to the feature
+      feature.properties.transplantCount = dataLookup[stateCode].counts;
+      feature.properties.organ = dataLookup[stateCode].organ;
+      // ... add other properties as needed
+    }
+  });
+
+  // Now 'geojsonData' contains the merged data and is ready for use in your map
+}
+
+
 
 // Get the data with d3.
-d3.json(geoData).then(function(data) {
+d3.json(geojsonData).then(function(data) {
     // Create a new choropleth layer.
     let geojson = L.choropleth(data, {
       // Define which property in the features to use.
