@@ -63,18 +63,18 @@ p {color: #045353;
      
 }
 #bar1 {
-    width: 900px;
+    width: 600px;
     height: 400px;
     
     }
 #bar2 {
-    width: 900px;
+    width: 600px;
     height: 400px;
     
     }
 .graph1 {
     display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space elements evenly */
+    justify-content: space-evenly; /* Space elements evenly */
     padding-bottom: 20px; 
     margin: 0 5px;
     
