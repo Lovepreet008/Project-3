@@ -72,7 +72,7 @@ d3.json(geojsonData).then(function(data) {
         layer.bindPopup("Zip Code: " + feature.properties.NAME + "<br>Estimated total income and benifits<br>" +
           "$" + feature.properties.DP03_75E);
     }
-      }).addTo(myMap);
+      }).addTo(map);
     // Set up the legend.
     let legend = L.control({ position: "bottomright" });
       // Add minimum and maximum.
@@ -99,6 +99,6 @@ d3.json(geojsonData).then(function(data) {
         return div;
       };
     // Adding the legend to the map
-    legend.addTo(myMap);
+    legend.addTo(map);
     }
   );
