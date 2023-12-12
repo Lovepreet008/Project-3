@@ -1,5 +1,5 @@
 # 1. import Flask
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, send_file
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
@@ -132,6 +132,9 @@ def state():
     data = DataModel3.query.all()
     return jsonify([item.serialize for item in data])
 
+@app.route('/api/geojsondata', methods=['GET'])
+def get_data():
+    return send_file('static/js/us-state-boundaries.geojson', mimetype='application/json')
 
 if __name__ == "__main__":
     app.run(debug=True)
