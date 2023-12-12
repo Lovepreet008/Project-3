@@ -23,6 +23,7 @@ Demographic data will be displayed for the following:
 - Race: 7 bins displayed in a pie chart for each year
 
 
+Group members: Alexandru Arnautu, Yasmin Bsata, Keyana Pregent, Lovepreet Singh
 
  
 
