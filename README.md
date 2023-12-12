@@ -22,6 +22,13 @@ Demographic data will be displayed for the following:
 - Age: 6 bins displayed in a histogram for each year
 - Race: 7 bins displayed in a pie chart for each year
 
+5. Limitations:
+Limitation #1: Dataset is large and extensive, presenting it as counts and percentages may not reflect and capture that full complexity of the data
+
+Limitation #2: Health Resources & Services Administration (HRSA) suppressed some data to maintain privacy of individuals: 
+HRSA lists all counts less than 16 as “suppressed”. This is to avoid possible back calculation of the category 
+
+
 
 Group members: Alexandru Arnautu, Yasmin Bsata, Keyana Pregent, Lovepreet Singh
 
