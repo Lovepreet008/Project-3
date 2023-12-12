@@ -16,28 +16,32 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: deceasedOrganRecovered,
         type: 'bar',
-        name: 'No. of deceased donor organ recovered'       
-       
+        name: 'No. of deceased donor organ recovered',       
+        marker: {
+          color: '#7f8a90' 
+      }
       };
 
       var trace2={
         x: setOrgan.map(item=>item.year),
         y: livingOrganRecovered,
         type: 'bar',
-        name: 'No. of living donor organ recovered'
-        
-        
+        name: 'No. of living donor organ recovered',
+        marker: {
+          color: '#759a9f'
+      }        
       };
       var data1=[trace1, trace2 ];
       var layout1={
         title: 'Living vs Deceased Organ Donor',
         xaxis: {
-          title: 'Years',
-
+          title: 'Years'
         },
         yaxis: {
           title: 'No. of Donors',
-        }
+        },
+        plot_bgcolor: '#a6bac0', 
+        paper_bgcolor: '#a6bac0'
       };
 
       Plotly.newPlot("bar1", data1, layout1);
@@ -45,8 +49,10 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: setOrgan.map(item=> item.number_of_deceased_donor_organ_transplant_recipients),
         type: 'bar',
-        name: 'No. of deceased donor organ recipients'
-
+        name: 'No. of deceased donor organ recipients',
+        marker: {
+          color: '#7f8a90' 
+      }
 
       };
 
@@ -54,7 +60,10 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: setOrgan.map(item=> item.number_of_living_donor_organ_transplant_recipients),
         type: 'bar',
-        name: 'No. of living donor organ recipients'
+        name: 'No. of living donor organ recipients',
+        marker: {
+          color: '#759a9f'
+      }
         
       };
       var data2=[trace3, trace4];
@@ -66,7 +75,9 @@ function init(data) {
         },
         yaxis: {
           title: 'No. of Recipients',
-        }
+        },
+        plot_bgcolor: '#a6bac0', 
+        paper_bgcolor: '#a6bac0'
       };
 
 
