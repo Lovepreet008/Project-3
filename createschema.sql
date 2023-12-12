@@ -28,9 +28,9 @@ CREATE TABLE state(
 
 
 CREATE TABLE demographics(
-    transplanet_year INTEGER PRIMARY KEY,
+    transplant_year INTEGER PRIMARY KEY,
     donor_type VARCHAR PRIMARY KEY,
-    organ_transplanted VARCHAR PRIMARY KEY,
+    organ_transplantd VARCHAR PRIMARY KEY,
     total INTEGER,
     male INTEGER, 
     female INTEGER,
