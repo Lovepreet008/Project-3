@@ -16,7 +16,7 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: deceasedOrganRecovered,
         type: 'bar',
-        name: 'No. of deceased donor organ recovered',       
+        name: 'No. of deceased donor',       
         marker: {
           color: '#7f8a90' 
       }
@@ -26,7 +26,7 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: livingOrganRecovered,
         type: 'bar',
-        name: 'No. of living donor organ recovered',
+        name: 'No. of living donor',
         marker: {
           color: '#759a9f'
       }        
