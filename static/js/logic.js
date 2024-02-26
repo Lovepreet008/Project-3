@@ -13,8 +13,8 @@ function createPieChart1(data, year) {
         values: [maleCount, femaleCount],
         labels: ['Male', 'Female'],
         type: 'pie',
-        marker: {
-            colors: ['#507f8f', '#f2d1c4']}
+        // marker: {
+        //     colors: ['#507f8f', '#f2d1c4']}
     }];
 
     // Define the layout 
@@ -27,8 +27,8 @@ function createPieChart1(data, year) {
         },
         height: 400,
         width: 500,
-        plot_bgcolor: '#a6bac0', 
-        paper_bgcolor: '#a6bac0'
+        // plot_bgcolor: '#a6bac0', 
+        // paper_bgcolor: '#a6bac0'
     };
 
     // Render the pie chart
@@ -54,8 +54,8 @@ function createHistogram(data, year) {
         x: ['Below 18', '18-30', '31-40', '41-50', '51-60', '61+'],
         y: [pediatric, age18_30, age31_40, age41_50, age51_60, age61_plus],
         type: 'bar',
-        marker: {
-            color: '#faf0e6'}
+        // marker: {
+        //     color: '#faf0e6'}
     } 
 
     // Define the layout for histogram
@@ -69,8 +69,8 @@ function createHistogram(data, year) {
         xaxis: {title: 'Age Group'},
         yaxis: {title: 'Count'},
         bargap: 0.2,
-        plot_bgcolor: '#a6bac0', 
-        paper_bgcolor: '#a6bac0' 
+        // plot_bgcolor: '#a6bac0', 
+        // paper_bgcolor: '#a6bac0' 
     }
     
         // Render the pie chart
@@ -98,8 +98,8 @@ function createPieChart2(data, year) {
         values : [white, black, hispanic, asian, american_indian, native_hawaiian, multiracial],
         labels: ['White', 'Black', 'Hispanic', 'Asian', 'Native American', 'Native Hawaiian', 'Multiracial'],
         type: 'pie',
-        marker: {
-            colors: ['#772729', '#3e4a61', '#7e675e', '#5a2328', '#323232', '#2b2d42', '#464866']}
+        // marker: {
+        //     colors: ['#772729', '#3e4a61', '#7e675e', '#5a2328', '#323232', '#2b2d42', '#464866']}
     }]
 
     // Define the layout
@@ -112,8 +112,8 @@ function createPieChart2(data, year) {
         },
         height: 400,
         width: 500,
-        plot_bgcolor: '#a6bac0', 
-        paper_bgcolor: '#a6bac0'
+        // plot_bgcolor: '#a6bac0', 
+        // paper_bgcolor: '#a6bac0'
     }; 
 
     // Render the pie chart

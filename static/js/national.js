@@ -17,9 +17,9 @@ function init(data) {
         y: deceasedOrganRecovered,
         type: 'bar',
         name: 'No. of deceased donor',       
-        marker: {
-          color: '#7f8a90' 
-      }
+      //   marker: {
+      //     color: '#7f8a90' 
+      // }
       };
 
       var trace2={
@@ -27,9 +27,9 @@ function init(data) {
         y: livingOrganRecovered,
         type: 'bar',
         name: 'No. of living donor',
-        marker: {
-          color: '#759a9f'
-      }        
+      //   marker: {
+      //     color: '#759a9f'
+      // }        
       };
       var data1=[trace1, trace2 ];
       var layout1={
@@ -40,8 +40,8 @@ function init(data) {
         yaxis: {
           title: 'No. of Donors',
         },
-        plot_bgcolor: '#a6bac0', 
-        paper_bgcolor: '#a6bac0'
+        // plot_bgcolor: 'edf3fd', 
+        // paper_bgcolor: 'ffffff'
       };
 
       Plotly.newPlot("bar1", data1, layout1);
@@ -49,10 +49,10 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: setOrgan.map(item=> item.number_of_deceased_donor_organ_transplant_recipients),
         type: 'bar',
-        name: 'No. of deceased donor organ recipients',
-        marker: {
-          color: '#7f8a90' 
-      }
+        name: 'No. of deceased donor recipients',
+      //   marker: {
+      //     color: '#7f8a90' 
+      // }
 
       };
 
@@ -60,10 +60,10 @@ function init(data) {
         x: setOrgan.map(item=>item.year),
         y: setOrgan.map(item=> item.number_of_living_donor_organ_transplant_recipients),
         type: 'bar',
-        name: 'No. of living donor organ recipients',
-        marker: {
-          color: '#759a9f'
-      }
+        name: 'No. of living donor recipients',
+      //   marker: {
+      //     color: '#759a9f'
+      // }
         
       };
       var data2=[trace3, trace4];
@@ -76,8 +76,8 @@ function init(data) {
         yaxis: {
           title: 'No. of Recipients',
         },
-        plot_bgcolor: '#a6bac0', 
-        paper_bgcolor: '#a6bac0'
+        // plot_bgcolor: '#a6bac0', 
+        // paper_bgcolor: '#a6bac0'
       };
 
 

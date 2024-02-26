@@ -1,18 +1,18 @@
-html {background-color: white ;
+html {background-color:  #5CD3FF;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;}
 
 
-body {background-color: whitesmoke}
+body {background-color: #5CD3FF}
 
-h1 {color: #333;
+h1 {color: #fafafa;
     font-size: 40px;
     font-family: 'Arial', sans-serif;
     text-align: center;
     
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-p {color: #045353;
+p {color: #09090afb;
     font-size: 20px;
     font-family: 'Roboto', sans-serif; ;
     text-align: center;

@@ -98,7 +98,7 @@ function updateMap() {
             return stateInfo.length > 0 ? stateInfo[0].counts : 0;
         },
         // Set the color scale.
-        scale: ["#FFFFB2", "#B10026"],
+        scale: ["#FFFFB2", "#99000d"],
         // The number of breaks in the step range
         steps: 10,
         // q for quartile, e for equidistant, k for k-means
