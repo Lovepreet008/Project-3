@@ -13,7 +13,7 @@ GeoJson was obtained from: https://public.opendatasoft.com/explore/dataset/us-st
 - y-axis: count
   each bar chart will be grouped with one bar for donors and one bar for recipients per each year 
 
-![alt text](image.png)   ![alt text](image-2.png)
+![alt text](image.png)   ![alt text](image-7.png)
   
 2. overview-state.csv: 
 We will focus on the Transplant Recipients category. This visualization will show the recipient count across the 50 states suing Chloropleth. Users will be able to select the year from 2017-2022 to show the map for each year. When selecting a state, a popup will show the recipient count for all organs, heart, kidney, kidney-pancreas, liver, lung, and pancreas.   
