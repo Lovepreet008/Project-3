@@ -1,25 +1,96 @@
-# Project-3-Group 3 
+# Organ Donation and Transplantation in US (2017-2022)
 
-### Project Overview: 
 We are showcasing organ donation and transplantation across the American States for the following organs: Heart, Kidney, Kidney-Pancreas, Liver, Lung, Pancreas, and All. 
 
-### Dataset
-Meta origin dataset was obtained from the Health Resources and Service Administration: https://data.hrsa.gov/data/download. Includes data from January 1, 2017 - and December 31, 2022.
-GeoJson was obtained from: https://public.opendatasoft.com/explore/dataset/us-state-boundaries/table/. for the United States US Boundaries for our map visualization.
+## Acknowledgements
 
-### Obejectives: 
+ - [Health Resources and Service Administration Data (2017- 2022)](https://data.hrsa.gov/data/download)
+ - [GeoJson for US states](https://public.opendatasoft.com/explore/dataset/us-state-boundaries/table/)
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:Lovepreet008/Project-3.git
+```
+
+Go to the project directory
+
+```bash
+  cd Project-3
+```
+
+Install dependencies
+
+```bash
+  pip Install pandas
+```
+```bash
+  pip Install Flask
+```
+```bash
+  pip Install numpy
+```
+```bash
+  pip install SQLAlchemy
+
+```
+```bash
+  pip install psycopg2
+```
+
+Start the server
+
+```bash
+  python demoapp.py
+```
+
+
+ 
+## API Reference
+
+#### Get main page
+
+```http
+  GET /
+```
+
+
+#### Get demographics data
+
+```http
+  GET /api/demographics
+```
+
+#### Get national data
+
+```http
+  GET /api/national
+```
+
+#### Get state data
+
+```http
+  GET /api/state
+```
+
+
+## Objectives: 
 #### 1. National Overview: 
  This visualization will include two bar charts: one for living donors/recipients and one for decreased organs/recipients:
 - x-axis: years 2017-2022
 - y-axis: count
   each bar chart will be grouped with one bar for donors and one bar for recipients per each year 
 
-![alt text](image.png)   ![alt text](image-7.png)
+![alt text](screenshots/image.png)   ![alt text](screenshots/image-7.png)
   
 #### 2. State Overview: 
 We will focus on the Transplant Recipients category. This visualization will show the recipient count across the 50 states suing Chloropleth. Users will be able to select the year from 2017-2022 to show the map for each year. When selecting a state, a popup will show the recipient count for all organs, heart, kidney, kidney-pancreas, liver, lung, and pancreas.   
 
-![alt text](image-3.png)
+![alt text](screenshots/image-3.png)
 
 
 #### 3. Recipient Demographics: 
@@ -28,11 +99,11 @@ Demographic data displays the following:
 - Age: 6 bins displayed in a histogram for each year
 - Race: 7 bins displayed in a pie chart for each year
 
-![alt text](image-4.png)  ![alt text](image-5.png)
+![alt text](screenshots/image-4.png)  ![alt text](screenshots/image-5.png)
 
-![alt text](image-6.png)
+![alt text](screenshots/image-6.png)
 
-#### 4. Limitations:
+## Limitations:
 Limitation #1: Dataset is large and extensive, presenting it as counts and percentages may not reflect and capture the full complexity of the data
 
 Limitation #2: Health Resources & Services Administration (HRSA) suppressed some data to maintain the privacy of individuals: 
